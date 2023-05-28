@@ -1,0 +1,130 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6086114b-46d9-4bb7-bab3-0f07b3589bf9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bank Data Source Dataminingg</ID>
+  <Name>Bank Data Source Dataminingg</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Sales Data Source Datamining</DataSourceID>
+  <Schema>
+    <xs:schema id="Bank_x0020_Data_x0020_Source_x0020_Dataminingg" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Bank_x0020_Data_x0020_Source_x0020_Dataminingg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c6bd004f-cd44-47f5-b070-de1bb346e864">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_BankDataSource" msprop:design-time-name="7a8ff6ea-f526-4381-92a7-337f97500b18" msprop:DbTableName="BankDataSource" msprop:FriendlyName="BankDataSource" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="dd9478fb-6d22-4fe1-a4c5-7b6fe3060b67" msprop:DbColumnName="Id" msprop:FriendlyName="Id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:design-time-name="7db241fb-80da-480d-b5ad-89ed5ba8e0fa" msprop:DbColumnName="Age" msprop:FriendlyName="Age" type="xs:int" minOccurs="0" />
+                  <xs:element name="Sex" msprop:design-time-name="f19c06c9-4ff1-42a4-a84d-97b79197cc48" msprop:DbColumnName="Sex" msprop:FriendlyName="Sex" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Region" msprop:design-time-name="db395dc9-1d30-4727-a837-a54fb7e7a267" msprop:DbColumnName="Region" msprop:FriendlyName="Region" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Incom" msprop:design-time-name="a6734a8f-e5c8-4d93-a756-146d2bb87545" msprop:DbColumnName="Incom" msprop:FriendlyName="Incom" type="xs:double" minOccurs="0" />
+                  <xs:element name="Married" msprop:design-time-name="8f549c02-58f8-4f83-a797-af9dc68f270f" msprop:DbColumnName="Married" msprop:FriendlyName="Married" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Children" msprop:design-time-name="e59e4a48-e46d-41ba-b9fc-34f0a295b873" msprop:DbColumnName="Children" msprop:FriendlyName="Children" type="xs:int" minOccurs="0" />
+                  <xs:element name="Car" msprop:design-time-name="8e580120-14f7-45d3-976b-f23cc33ac722" msprop:DbColumnName="Car" msprop:FriendlyName="Car" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SavingsAccount" msprop:design-time-name="547a9a3f-58e5-4971-b98e-7ab4d51a649a" msprop:DbColumnName="SavingsAccount" msprop:FriendlyName="SavingsAccount" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CurrentAccount" msprop:design-time-name="5c5531f2-8987-4227-9826-ca06cec01ffb" msprop:DbColumnName="CurrentAccount" msprop:FriendlyName="CurrentAccount" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Mortgage" msprop:design-time-name="b8f00199-8438-4f3d-abbb-77c9beecd3ae" msprop:DbColumnName="Mortgage" msprop:FriendlyName="Mortgage" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lend" msprop:design-time-name="dedd8496-9353-409d-9ae8-ee2a09e73831" msprop:DbColumnName="Lend" msprop:FriendlyName="Lend" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Bank_x0020_Data_x0020_Source_x0020_Dataminingg xmlns="" />
+  </Schema>
+</DataSourceView>

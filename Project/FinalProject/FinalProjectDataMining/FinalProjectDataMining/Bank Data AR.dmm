@@ -1,0 +1,356 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="27bb2ab8-b452-4285-abd4-aab7b92babda" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bank Data AR</ID>
+  <Name>Bank Data AR</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_BankDataSource</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12077" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27411" y="11007" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BankDataSource" left="-10458" top="-3514" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3217" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000910c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BankDataSource" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12077</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-10458</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3514</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="54ade5b7-c2fb-4648-a5df-29f31fd054d8">
+    <DataSourceViewID>Bank Data Source Dataminingg</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e4a44e8b-6493-456f-823a-f5b4c0511464">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eead9b8c-1f59-43c9-bbac-e0c440adfd83">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8e21b99f-a5ab-4447-abce-70bfb00e7599">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="41973df9-8ed4-4bdc-b266-bda6912e33fc">
+      <ID>Car</ID>
+      <Name>Car</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9202743a-04d3-43a4-bb84-86793d6bac2f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4488cac5-cdd5-4f48-bbbe-06585bb75104">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Car</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5fd8625f-555f-4b7b-ae91-14140520b696">
+      <ID>Children</ID>
+      <Name>Children</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ab464e7-ca59-45ae-8b9d-c44d49ac798d">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d3dda96-ad1a-4b30-b9a4-b93b76c9cef9">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Children</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3117e5cc-25b9-4e24-b3a5-4a0a45bce382">
+      <ID>Current Account</ID>
+      <Name>Current Account</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ab422f6-2144-41d0-9347-bc249b52f377">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0398f0e9-5143-4114-ba4a-807f8f400b47">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>CurrentAccount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="78f2f40c-1447-4c24-b462-f829e2c7da22">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="147f5ce2-1364-4c6d-9435-c22c372c1796">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca4127b7-eacf-404f-9bee-04daac0a55c8">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b9ab2ae8-35b2-4e36-8e82-9b2611f73186">
+      <ID>Incom</ID>
+      <Name>Incom</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9137e608-49ee-4db1-ba7e-9beb4d09abfc">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae2113e5-5c4d-4250-a2a6-5c944a7e5d88">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Incom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5e257c19-7127-4725-9a36-385803fb742f">
+      <ID>Lend</ID>
+      <Name>Lend</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81b5722b-d4ba-446a-aa4b-213478395544">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5585279d-4c73-428d-95ec-9beb162f5c7f">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Lend</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="485a0c51-53bf-45c2-864f-d423cdcfa7eb">
+      <ID>Married</ID>
+      <Name>Married</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a899f72-8248-4284-b4ba-24f286af4a97">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="adc325b0-8297-4ffd-b5c4-e72e751d3486">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Married</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2e51ba52-a4f2-4caa-88e0-3ffe59a220d0">
+      <ID>Mortgage</ID>
+      <Name>Mortgage</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2ee7791-fdb6-4ffb-8c37-cbea9f0a5d6b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3278419-f24a-4f67-baa0-ad1aed5b567d">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Mortgage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bcf1864f-ebec-483d-a201-286f02478550">
+      <ID>Region</ID>
+      <Name>Region</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cddeddec-fb63-4e97-a238-7ddfcbb1063b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11578c92-5cdb-4c30-acba-409879b3ea9d">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Region</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="435d4be9-ddf9-4c22-830f-ed1f31b8d7e0">
+      <ID>Savings Account</ID>
+      <Name>Savings Account</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="770f6df5-8e47-457f-8a6b-a6edbaa6d0ae">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84748e1a-b592-4755-9d37-9961331dd9d0">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>SavingsAccount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="72b8eb50-2646-42a0-9d0f-45c9a4f5c3dc">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08662846-409f-4a26-8172-cd4b1a8c1e37">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d4b3936-f535-48ed-9c98-d15821df81bb">
+            <TableID>dbo_BankDataSource</TableID>
+            <ColumnID>Sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="c438472d-4cb9-45b1-bd5e-39396a6c01f1">
+      <ID>Bank Data AR</ID>
+      <Name>Bank Data AR</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.1</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="dd97e7a8-f15f-42a3-b30e-4edaaf7f49f3">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="82cbc947-0a03-45f1-a72f-af8ce9464502">
+          <ID>Car</ID>
+          <Name>Car</Name>
+          <SourceColumnID>Car</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="837e30d8-9b11-416a-9fdb-e8579f8951c1">
+          <ID>Children</ID>
+          <Name>Children</Name>
+          <SourceColumnID>Children</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="36200e11-a947-4a9b-a481-60a1f9715bee">
+          <ID>Current Account</ID>
+          <Name>Current Account</Name>
+          <SourceColumnID>Current Account</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="6785753b-54f4-4995-94d8-43fa2b7f1ae9">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="471107f1-4adf-4ccc-a7c0-1640baaa1368">
+          <ID>Incom</ID>
+          <Name>Incom</Name>
+          <SourceColumnID>Incom</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="909f1300-0c61-48c5-a09c-b43e362c61e5">
+          <ID>Lend</ID>
+          <Name>Lend</Name>
+          <SourceColumnID>Lend</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="3bfe8c7c-9eb4-47cc-9f32-eb3e1e042bdc">
+          <ID>Married</ID>
+          <Name>Married</Name>
+          <SourceColumnID>Married</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7d9959bb-de73-4aa8-a443-b174b50a073c">
+          <ID>Mortgage</ID>
+          <Name>Mortgage</Name>
+          <SourceColumnID>Mortgage</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6c23f050-5d92-41e7-b458-51aa57079351">
+          <ID>Region</ID>
+          <Name>Region</Name>
+          <SourceColumnID>Region</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ebe42d21-134a-4930-8e59-e07a1a45a167">
+          <ID>Savings Account</ID>
+          <Name>Savings Account</Name>
+          <SourceColumnID>Savings Account</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="637c2399-e2b2-4c8c-9c42-0a73924c583a">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceColumnID>Sex</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

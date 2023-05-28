@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LEVUTHEKHOI.SalesDataSource_Datamining"
+  DTS:DTSID="{116D21E4-F7DA-40BD-A632-8061044678E3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LEVUTHEKHOI;Initial Catalog=SalesDataSource_Datamining;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-LoadSource-{116D21E4-F7DA-40BD-A632-8061044678E3}LEVUTHEKHOI.SalesDataSource_Datamining;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
