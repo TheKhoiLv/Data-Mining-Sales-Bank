@@ -1,6 +1,6 @@
 # Data Mining Sales-Bank
 ## 1. Introduce
-The project uses 2 data sets: Sales data and Bank data:
+The project uses 2 data sets: Sales data and Bank data
 - Data mining a sales is an important activity for businesses today, especially in the analysis of sales data. Business data analytics plays an important role in improving warehouse management, chain stores, improving pricing decisions and marketing strategies. Using predictive analytics can help businesses reduce inventory management costs, increase shelf efficiency, focus resources on high-demand areas, and capture trends quickly. sales and optimize shipping.
 - Data mining this dataset describes a bank's data about the criteria it considers to agree to lend money to a customer. Some criteria such as whether this customer has a family, how many children, has a car, has a savings account, has a current account... and then will decide whether to agree to a loan or not.
 - Dataset in folder Data
